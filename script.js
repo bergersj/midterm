@@ -13,4 +13,5 @@ $('.seat').click(function(){
    $(this).css('background-color', 'rgb(127, 0, 0)');
  });
 
+
 });
