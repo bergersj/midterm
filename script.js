@@ -32,3 +32,8 @@ class Individual {
    console.log(this.species + " makes a sound")
  }
 }
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.phoneNumber = firstName;
+      this.emailAddress = emailAddress;
+      this.additionalInfo = additionalInfo; }
