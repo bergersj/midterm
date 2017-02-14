@@ -15,3 +15,20 @@ $('.seat').click(function(){
 
 
 });
+
+
+var reservedSeats = [];
+class Individual {
+  constructor(firstName, lastName, phoneNumber, emailAddress, additionalInfo){
+    // set the species property of our animal to whatever parameter we pass through it
+    
+}
+  //created a method for our animal to allow it to eat, and make a noise while doing so
+ eatFood() {
+    console.log('Nom Nom Nom!');
+  }
+  //created a method for our animal that allows it to speak to us
+ speak(){
+   console.log(this.species + " makes a sound")
+ }
+}
