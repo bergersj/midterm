@@ -5,7 +5,7 @@ $(document).ready(function(){
      $(this).fadeTo("fast", 0.65);
    });
    $('.seat').mouseleave(function(){
-      $(this).fadeTo("fast", 1.00);
+      $(this).fadeTo(50, 1.00);
    });
 
 //effect once seat has been clicked on
@@ -21,7 +21,7 @@ var reservedSeats = [];
 class Individual {
   constructor(firstName, lastName, phoneNumber, emailAddress, additionalInfo){
     // set the species property of our animal to whatever parameter we pass through it
-    
+
 }
   //created a method for our animal to allow it to eat, and make a noise while doing so
  eatFood() {
