@@ -1,16 +1,20 @@
 .seat {
   display: inline-block;
   border-style: solid;
-  margin: 10px;
-  padding: 50px;
   background-color: rgb(189, 11, 27);
   border-radius: 5px;
+  width: 10%;
+  height: 100px;;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
 .seatingChart {
   border-style: solid;
-  padding: 20px;
   padding-top: 100px;
+  padding-bottom: 20px;
   margin: 20px;
   text-align: center;
+  position: relative;
 }
