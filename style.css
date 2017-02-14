@@ -1,0 +1,13 @@
+.seat {
+  display: inline-block;
+  border-style: solid;
+  margin: 10px;
+  padding: 10px;
+}
+
+.seatingChart {
+  border-style: solid;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
