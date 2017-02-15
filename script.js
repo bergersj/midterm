@@ -20,16 +20,16 @@ var reservedSeats = [];
 var reservedSeat;
 
 
-class Individual {
-  constructor(formFirstName, formLastName, formPhoneNumber, formEMail, formExtraInfo){
-    // set the species property of our animal to whatever parameter we pass through it
-    this.firstName = formFirstName;
-    this.lastName = formLastName;
-    this.phoneNumber = formPhoneNumber;
-    this.emailAddress = formEMail;
-    this.additionalInfo = formExtraInfo;
-  }
-}
+// class Individual {
+//   constructor(formFirstName, formLastName, formPhoneNumber, formEMail, formExtraInfo){
+//     // set the species property of our animal to whatever parameter we pass through it
+//     this.firstName = formFirstName;
+//     this.lastName = formLastName;
+//     this.phoneNumber = formPhoneNumber;
+//     this.emailAddress = formEMail;
+//     this.additionalInfo = formExtraInfo;
+//   }
+// }
 
 //creating function to create element from user's form info
 function registerSeat(){
@@ -45,14 +45,5 @@ function registerSeat(){
     seatTaken ["this.eMail"] = eMail;
     seatTaken["this.extraInfo"] = extraInfo;
     reservedSeats.push(seatTaken);
+    // document.forms['reservationForm'].reset();
 }
-
-// var formFirstName = document.input.getElementById('firstName').value;
-// var formLastName = document.input.getElementById('lastName').value;
-// var formPhoneNumber = document.input.getElementById('phoneNumber').value;
-// var formEMail = document.input.getElementById('eMail').value;
-// var formExtraInfo = document.input.getElementById('extraInfo').value;
-
-// var seatTaken  = new Individual('Grant', 'Circus', 313131313, 'GC@gc.com', 'formExtraInfo');
-//
-// reservedSeats.push(seatTaken);
