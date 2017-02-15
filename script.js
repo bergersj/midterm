@@ -45,5 +45,4 @@ function registerSeat(){
     seatTaken ["this.eMail"] = eMail;
     seatTaken["this.extraInfo"] = extraInfo;
     reservedSeats.push(seatTaken);
-    // document.forms['reservationForm'].reset();
 }
