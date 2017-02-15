@@ -22,8 +22,20 @@ $('.seat').click(function(){
 
 
 
-var reservedSeats = [];
-
+// var reservedSeats = [];
+// var formFirstName = document.input.getElementById('firstName');
+// var formLastName = document.input.getElementById('lastName');
+// var formPhoneNumber = document.input.getElementById('phoneNumber');
+// var formEMail = document.input.getElementById('eMail');
+// var formExtraInfo = document.input.getElementById('extraInfo');
+//
+// var seatTaken = {
+//   firstName: formFirstName,
+//   lastName: formLastName,
+// };
+// 
+// reservedSeats.push(seatTaken);
+// console.log(reservedSeats);
 
 class Individual {
   constructor(formFirstName, formLastName, formPhoneNumber, formEMail, formExtraInfo){
@@ -36,11 +48,11 @@ class Individual {
   }
 }
 
-var formFirstName = document.input.getElementById('#firstName');
-var formLastName = document.input.getElementById('#lastName');
-var formPhoneNumber = document.input.getElementById('#phoneNumber');
-var formEMail = document.input.getElementById('#eMail');
-var formExtraInfo = document.input.getElementById('#extraInfo');
+var formFirstName = document.input.getElementById('firstName').value;
+var formLastName = document.input.getElementById('lastName').value;
+var formPhoneNumber = document.input.getElementById('phoneNumber').value;
+var formEMail = document.input.getElementById('eMail').value;
+var formExtraInfo = document.input.getElementById('extraInfo').value;
 
 var seatTaken  = new Individual(formFirstName, formLastName, formPhoneNumber, formEMail, formExtraInfo);
   console.log(seatTaken);
