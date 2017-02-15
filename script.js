@@ -7,10 +7,6 @@ $(document).ready(function(){
    $('.seat').mouseleave(function(){
       $(this).fadeTo(50, 1.00);
    });
-//    $(".seat").hover(
-//     function(){$(this).animate({width: 200%, height:200%}, 1000);},
-//     function(){$(this).animate({width: 100%, height:100%}, 1000);}
-// );
 
 //effect once seat has been clicked on
 $('.seat').click(function(){
@@ -20,61 +16,8 @@ $('.seat').click(function(){
 
 });
 
-
-
-
-// var reservedSeats = [];
-// var formFirstName = document.input.getElementById('firstName');
-// var formLastName = document.input.getElementById('lastName');
-// var formPhoneNumber = document.input.getElementById('phoneNumber');
-// var formEMail = document.input.getElementById('eMail');
-// var formExtraInfo = document.input.getElementById('extraInfo');
-//
-// var seatTaken = {
-//   firstName: formFirstName,
-//   lastName: formLastName,
-// };
-//
-// reservedSeats.push(seatTaken);
-// console.log(reservedSeats);
-
-
-
 var reservedSeats = [];
 var reservedSeat;
-
-//created an Indivudual object
-class Individual {
-  constructor(firstName, lastName, phoneNumber, emailAddress, additionalInfo){
-    // set the species property of our animal to whatever parameter we pass through it
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.phoneNumber = phoneNumber;
-    this.emailAddress = emailAddress;
-    this.additionalInfo = additionalInfo;
-    return lastName;
-}
- displayName(lastName) {
-    var lastName = lastName;
-document.write.getElementById("A1").lastName;
-}
-}
-
-// class Individual {
-//  constructor(firstName, lastName, phoneNumber, emailAddress, additionalInfo){
-//      this.firstName = firstName;
-//      this.lastName = lastName;
-//      this.phoneNumber = firstName;
-//      this.emailAddress = emailAddress;
-//      this.additionalInfo = additionalInfo;}
-//
-//    displayName(lastName, firstName) {
-//    console.log(lastName + ", " firstName);
-//  };
-
-
-var reservedSeats = [];
-
 
 
 class Individual {
@@ -88,11 +31,28 @@ class Individual {
   }
 }
 
-var formFirstName = document.input.getElementById('firstName').value;
-var formLastName = document.input.getElementById('lastName').value;
-var formPhoneNumber = document.input.getElementById('phoneNumber').value;
-var formEMail = document.input.getElementById('eMail').value;
-var formExtraInfo = document.input.getElementById('extraInfo').value;
+//creating function to create element from user's form info
+function registerSeat(){
+  var firstName = $('#firstName').val();
+  var lastName = $("#lastName").val();
+  var phoneNumber = $('#phoneNumber').val();
+  var eMail = $('#eMail').val();
+  var extraInfo = $('#extraInfo').val();
+    seatTaken = {};
+    seatTaken ["this.firstName"] = firstName;
+    seatTaken ["this.lastName"] = lastName;
+    seatTaken["this.phoneNumber"] = phoneNumber;
+    seatTaken ["this.eMail"] = eMail;
+    seatTaken["this.extraInfo"] = extraInfo;
+    reservedSeats.push(seatTaken);
+}
 
-var seatTaken  = new Individual(formFirstName, formLastName, formPhoneNumber, formEMail, formExtraInfo);
-  console.log(seatTaken);
+// var formFirstName = document.input.getElementById('firstName').value;
+// var formLastName = document.input.getElementById('lastName').value;
+// var formPhoneNumber = document.input.getElementById('phoneNumber').value;
+// var formEMail = document.input.getElementById('eMail').value;
+// var formExtraInfo = document.input.getElementById('extraInfo').value;
+
+// var seatTaken  = new Individual('Grant', 'Circus', 313131313, 'GC@gc.com', 'formExtraInfo');
+//
+// reservedSeats.push(seatTaken);
