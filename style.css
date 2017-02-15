@@ -16,6 +16,8 @@
   border-radius: 5px;
   padding-top: 100px;
   padding-bottom: 20px;
+  width: 100%;
+  min-width: 400px;
   margin: 20px;
   text-align: center;
   position: relative;
