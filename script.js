@@ -15,11 +15,10 @@ $('.seat').click(function(){
 
 
 });
-
+//creates an empty array to store our objects
 var reservedSeats = [];
 var reservedSeat;
-
-
+//creates a class of Individual to create our object from
 class Individual {
   constructor(formFirstName, formLastName, formPhoneNumber, formEMail, formExtraInfo){
     // set the species property of our animal to whatever parameter we pass through it
@@ -31,20 +30,26 @@ class Individual {
   }
 }
 
-//creating function to create element from user's form info
+//created a function to retrieve form data that is submitted by the onclick event. it places each individual attribute to a variable
 function registerSeat(){
   var firstName = $('#firstName').val();
   var lastName = $("#lastName").val();
   var phoneNumber = $('#phoneNumber').val();
   var eMail = $('#eMail').val();
   var extraInfo = $('#extraInfo').val();
+    
     seatTaken = {};
     seatTaken ["this.firstName"] = firstName;
     seatTaken ["this.lastName"] = lastName;
     seatTaken["this.phoneNumber"] = phoneNumber;
     seatTaken ["this.eMail"] = eMail;
     seatTaken["this.extraInfo"] = extraInfo;
+    //pushes our newly created seatTaken object into our empty reservedSeats array
     reservedSeats.push(seatTaken);
+}
+
+function clearForm() {
+     document.getElementById("userForm").reset();
 }
 
 // var formFirstName = document.input.getElementById('firstName').value;

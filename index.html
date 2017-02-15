@@ -27,7 +27,7 @@
         </div>
         <div class="modal-body">
             <div id="form">
-            <form action="index.html" method="get">
+            <form action="index.html" method="get" id="userForm">
               <form action="Reserve Your Seat">
                 First Name: <br>
                 <input type="text" name="firstName" placeholder="Ticket Holder First Name" id="firstName"><br>
@@ -40,7 +40,8 @@
                 Special Request:<br>
 
                 <input type="Msg" name="additionalInfo" placeholder="Special Request" id="extraInfo"><br>
-                <input type="button" value="Submit" data-dismiss="modal" onclick="registerSeat()">
+            <!-- added two onclick events to our form button, one to retrieve the form information which will be converted into an object in our script file, the other onclick event clears the form data after it is submitted. -->
+                <input type="button" value="Submit" data-dismiss="modal" onclick="registerSeat(); clearForm();">
 
               </form>
 
