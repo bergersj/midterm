@@ -7,6 +7,10 @@ $(document).ready(function(){
    $('.seat').mouseleave(function(){
       $(this).fadeTo(50, 1.00);
    });
+//    $(".seat").hover(
+//     function(){$(this).animate({width: 200%, height:200%}, 1000);},
+//     function(){$(this).animate({width: 100%, height:100%}, 1000);}
+// );
 
 //effect once seat has been clicked on
 $('.seat').click(function(){
@@ -17,23 +21,24 @@ $('.seat').click(function(){
 });
 
 
-var reservedSeats = [];
-class Individual {
-  constructor(firstName, lastName, phoneNumber, emailAddress, additionalInfo){
-    // set the species property of our animal to whatever parameter we pass through it
 
-}
-  //created a method for our animal to allow it to eat, and make a noise while doing so
- eatFood() {
-    console.log('Nom Nom Nom!');
+var reservedSeats = [];
+var formFirstName = getElementById('#firstName');
+var formLastName = getElementById('#lastName');
+var formPhoneNumber = getElementById('#phoneNumber');
+var formEMail = getElementById('#eMail');
+var formExtraInfo = getElementById('#extraInfo');
+
+class Individual {
+  constructor(formFirstName, formLastName, formPhoneNumber, formEMail, formExtraInfo){
+    // set the species property of our animal to whatever parameter we pass through it
+    this.firstName = formFirstName;
+    this.lastName = formLastName;
+    this.phoneNumber = formPhoneNumber;
+    this.emailAddress = formEMail;
+    this.additionalInfo = formExtraInfo;
   }
-  //created a method for our animal that allows it to speak to us
- speak(){
-   console.log(this.species + " makes a sound")
- }
 }
-      this.firstName = firstName;
-      this.lastName = lastName;
-      this.phoneNumber = firstName;
-      this.emailAddress = emailAddress;
-      this.additionalInfo = additionalInfo; }
+
+var seatTaken  = new Individual(formFirstName, formLastName, formPhoneNumber, formEMail, formExtraInfo);
+  console.log(seatTaken);
