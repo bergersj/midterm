@@ -23,11 +23,7 @@ $('.seat').click(function(){
 
 
 var reservedSeats = [];
-var formFirstName = getElementById('#firstName');
-var formLastName = getElementById('#lastName');
-var formPhoneNumber = getElementById('#phoneNumber');
-var formEMail = getElementById('#eMail');
-var formExtraInfo = getElementById('#extraInfo');
+
 
 class Individual {
   constructor(formFirstName, formLastName, formPhoneNumber, formEMail, formExtraInfo){
@@ -39,6 +35,12 @@ class Individual {
     this.additionalInfo = formExtraInfo;
   }
 }
+
+var formFirstName = document.input.getElementById('#firstName');
+var formLastName = document.input.getElementById('#lastName');
+var formPhoneNumber = document.input.getElementById('#phoneNumber');
+var formEMail = document.input.getElementById('#eMail');
+var formExtraInfo = document.input.getElementById('#extraInfo');
 
 var seatTaken  = new Individual(formFirstName, formLastName, formPhoneNumber, formEMail, formExtraInfo);
   console.log(seatTaken);
