@@ -1,5 +1,9 @@
-.header {
-  text-align: center;
+.page-header {
+  background-color: rgba(138, 145, 145, 0.84);
+  color: white;
+  margin-top: 0;
+  padding: 20px;
+  border-style: none;
 }
 
 .stage {
@@ -8,7 +12,16 @@
   margin-bottom: 60px;
   margin-left: 12.5%;
   background-color: rgb(96, 97, 107);
+  border-radius: 5px;
 }
+
+body{
+background-image: url("https://s-media-cache-ak0.pinimg.com/originals/62/61/37/62613772f0561f161197028371ab1af7.jpg");
+background-position:center;
+background-repeat:no-repeat;
+background-size: cover;
+}
+
 
 .seat {
   display: inline-block;
@@ -25,8 +38,8 @@
 }
 
 .seatingChart {
-  border-style: solid;
-  border-radius: 5px;
+  /*border-style: solid;
+  border-radius: 5px; */
   padding-top: 5px;
   padding-bottom: 20px;
   width: 100%;
