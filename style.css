@@ -1,9 +1,15 @@
+
+
 .page-header {
-  background-color: rgba(138, 145, 145, 0.84);
+  /* background-color: rgba(138, 145, 145, 0.84); */
   color: white;
   margin-top: 0;
   padding: 20px;
   border-style: none;
+}
+
+.page-header h1{
+  size: 60pt !important;
 }
 
 .stage {
@@ -52,5 +58,8 @@ background-size: cover;
 .instructions {
   text-align: center;
   color: white;
-  letter-spacing: 1px;
+  letter-spacing: .75px;
+  font-weight: bolder;
+  font-size: 13pt;
+  font-family: 'Julius Sans One', sans-serif;
 }
