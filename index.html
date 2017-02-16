@@ -1,107 +1,111 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Grand Circus Theatre</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- Here is your CSS stylesheet -->
-    <link rel="stylesheet" href="style.css">
+ <head>
+   <meta charset="utf-8">
+   <title>The Filmore</title>
 
-  </head>
-  <body>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script type="text/javascript" src="script.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+   <!-- Here is your CSS stylesheet -->
+   <link rel="stylesheet" href="style.css">
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+ </head>
+ <body>
+<!-- Page header -->
+   <div class="page-header">
+     <h2 id="headerFont">Welcome to The Filmore</h2>
+   </div>
 
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Please enter your information to reserve seat(s) </h4>
-        </div>
-        <div class="modal-body">
-            <div id="form">
+ <!-- Modal -->
+ <div class="modal fade" id="myModal" role="dialog">
+   <div class="modal-dialog">
 
-            <form action="index.html" method="get" id="userForm">
-              <form action="Reserve Your Seat">
+     <!-- Modal content, seat reservation form -->
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4 class="modal-title">Please enter your information to reserve seat(s) </h4>
+       </div>
+       <div class="modal-body">
+           <div id="form">
 
-                First Name: <br>
-                <input type="text" name="firstName" placeholder="Ticket Holder First Name" id="firstName"><br>
-                Last Name:<br>
-                <input type="text" name="lastName" placeholder="Ticket Holder Last Name" id="lastName"><br>
-                Number:<br>
-                <input type="text" name="phoneNumber" placeholder="Daytime Phone Number" id="phoneNumber"><br>
-                Email:<br>
-                <input type="text" name="emailAddress" placeholder="Ticket Holder Email" id="eMail"><br>
-                Special Request:<br>
+           <form action="index.html" method="get" id="userForm">
+             <form action="Reserve Your Seat">
 
-                <input type="Msg" name="additionalInfo" placeholder="Special Request" id="extraInfo"><br>
-            <!-- added two onclick events to our form button, one to retrieve the form information which will be converted into an object in our script file, the other onclick event clears the form data after it is submitted. -->
-                <input type="button" value="Submit" data-dismiss="modal" onclick="registerSeat(); clearForm();">
+               First Name: <br>
+               <input type="text" name="firstName" placeholder="Ticket Holder First Name" id="firstName" size="30"><br>
+               Last Name:<br>
+               <input type="text" name="lastName" placeholder="Ticket Holder Last Name" id="lastName" size="30"><br>
+               Number:<br>
+               <input type="text" name="phoneNumber" placeholder="Daytime Phone Number" id="phoneNumber" size="30"><br>
+               Email:<br>
+               <input type="text" name="emailAddress" placeholder="Ticket Holder Email" id="eMail"size="30"><br>
+               Special Request:<br>
 
-              </form>
+               <input type="Msg" name="additionalInfo" placeholder="Special Request" id="extraInfo" size="30"><br>
+            <!-- button that runs the submitButton function, which retrieves information from form and
+          adds creates an object, then adds object to reservedSeats array -->
+              <br><input class="submitButton" type="button" value="Submit" data-dismiss="modal">
 
-            </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
+             </form>
 
-    </div>
-  </div>
-
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
 </div>
 
-    <div class="seatingChart">
-      <div class="rowOne">
-        <div class="seat" id="A1" data-toggle="modal" data-target="#myModal">A1</div>
-        <div class="seat" id="A2" data-toggle="modal" data-target="#myModal">A2</div>
-        <div class="seat" id="A3" data-toggle="modal" data-target="#myModal">A3</div>
-        <div class="seat" id="A4" data-toggle="modal" data-target="#myModal">A4</div>
-        <div class="seat" id="A5" data-toggle="modal" data-target="#myModal">A5</div>
-        <div class="seat" id="A6" data-toggle="modal" data-target="#myModal">A6</div>
-      </div>
-      <div class="rowTwo">
-        <div class="seat" id="B1" data-toggle="modal" data-target="#myModal">B1</div>
-        <div class="seat" id="B2" data-toggle="modal" data-target="#myModal">B2</div>
-        <div class="seat" id="B3" data-toggle="modal" data-target="#myModal">B3</div>
-        <div class="seat" id="B4" data-toggle="modal" data-target="#myModal">B4</div>
-        <div class="seat" id="B5" data-toggle="modal" data-target="#myModal">B5</div>
-        <div class="seat" id="B6" data-toggle="modal" data-target="#myModal">B6</div>
-      </div>
-      <div class="rowThee">
-        <div class="seat" id="C1" data-toggle="modal" data-target="#myModal">C1</div>
-        <div class="seat" id="C2" data-toggle="modal" data-target="#myModal">C2</div>
-        <div class="seat" id="C3" data-toggle="modal" data-target="#myModal">C3</div>
-        <div class="seat" id="C4" data-toggle="modal" data-target="#myModal">C4</div>
-        <div class="seat" id="C5" data-toggle="modal" data-target="#myModal">C5</div>
-        <div class="seat" id="C6" data-toggle="modal" data-target="#myModal">C6</div>
-      </div>
-      <div class="rowFour">
-        <div class="seat" id="D1" data-toggle="modal" data-target="#myModal">D1</div>
-        <div class="seat" id="D2" data-toggle="modal" data-target="#myModal">D2</div>
-        <div class="seat" id="D3" data-toggle="modal" data-target="#myModal">D3</div>
-        <div class="seat" id="D4" data-toggle="modal" data-target="#myModal">D4</div>
-        <div class="seat" id="D5" data-toggle="modal" data-target="#myModal">D5</div>
-        <div class="seat" id="D6" data-toggle="modal" data-target="#myModal">D6</div>
-      </div>
-    </div>
+<!-- seating chart  -->
+   <div class="seatingChart">
+     <div class="stage">Stage</div>
+     <div class="rowOne">
+       <div class="seat" id="A1" data-toggle="modal" data-target="#myModal">A1</div>
+       <div class="seat" id="A2" data-toggle="modal" data-target="#myModal">A2</div>
+       <div class="seat" id="A3" data-toggle="modal" data-target="#myModal">A3</div>
+       <div class="seat" id="A4" data-toggle="modal" data-target="#myModal">A4</div>
+       <div class="seat" id="A5" data-toggle="modal" data-target="#myModal">A5</div>
+       <div class="seat" id="A6" data-toggle="modal" data-target="#myModal">A6</div>
+     </div>
+     <div class="rowTwo">
+       <div class="seat" id="B1" data-toggle="modal" data-target="#myModal">B1</div>
+       <div class="seat" id="B2" data-toggle="modal" data-target="#myModal">B2</div>
+       <div class="seat" id="B3" data-toggle="modal" data-target="#myModal">B3</div>
+       <div class="seat" id="B4" data-toggle="modal" data-target="#myModal">B4</div>
+       <div class="seat" id="B5" data-toggle="modal" data-target="#myModal">B5</div>
+       <div class="seat" id="B6" data-toggle="modal" data-target="#myModal">B6</div>
+     </div>
+     <div class="rowThee">
+       <div class="seat" id="C1" data-toggle="modal" data-target="#myModal">C1</div>
+       <div class="seat" id="C2" data-toggle="modal" data-target="#myModal">C2</div>
+       <div class="seat" id="C3" data-toggle="modal" data-target="#myModal">C3</div>
+       <div class="seat" id="C4" data-toggle="modal" data-target="#myModal">C4</div>
+       <div class="seat" id="C5" data-toggle="modal" data-target="#myModal">C5</div>
+       <div class="seat" id="C6" data-toggle="modal" data-target="#myModal">C6</div>
+     </div>
+     <div class="rowFour">
+       <div class="seat" id="D1" data-toggle="modal" data-target="#myModal">D1</div>
+       <div class="seat" id="D2" data-toggle="modal" data-target="#myModal">D2</div>
+       <div class="seat" id="D3" data-toggle="modal" data-target="#myModal">D3</div>
+       <div class="seat" id="D4" data-toggle="modal" data-target="#myModal">D4</div>
+       <div class="seat" id="D5" data-toggle="modal" data-target="#myModal">D5</div>
+       <div class="seat" id="D6" data-toggle="modal" data-target="#myModal">D6</div>
+     </div>
+   </div>
+
+<!-- Bottom intructional paragraph -->
+   <div class="instructions">
+     <p>Please select an available seat(s) and complete the form for your reservation.</p>
+     <p>Thank you!</p>
+   </div>
 
 
-    <div class="instructions">
-      <p>Please select an available seat(s) and complete the form for your reservation.</p>
-      <p>Thank you!</p>
-    </div>
-
-
-    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
-    <!-- My last gift to you is a script file. Enjoy :] -->
-  </body>
+   <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+   <!-- My last gift to you is a script file. Enjoy :] -->
+ </body>
 </html>

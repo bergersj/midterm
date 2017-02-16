@@ -1,3 +1,37 @@
+body {
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(189, 11, 27);
+}
+
+
+.page-header {
+  /* background-color: rgba(138, 145, 145, 0.84); */
+  color: white;
+  margin-top: 0;
+  padding: 20px;
+  border-style: none;
+}
+
+h2 {
+  font-size: 60px !important;
+}
+
+.stage {
+  width: 75%;
+  height: 25px;
+  margin-bottom: 60px;
+  margin-left: 12.5%;
+  background-color: rgb(96, 97, 107);
+  opacity: .92;
+  border-radius: 5px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 20px;
+  color: rgb(214, 211, 213);
+  letter-spacing: 1.5px;
+  box-shadow: 5px 5px 2.5px rgb(54, 54, 52);
+}
+
 body{
 background-image: url("https://s-media-cache-ak0.pinimg.com/originals/62/61/37/62613772f0561f161197028371ab1af7.jpg");
 background-position:center;
@@ -18,12 +52,13 @@ background-size: cover;
   text-align: center;
   padding: 5px;
   font-size: 200%;
+  box-shadow: 5px 5px 2.5px rgb(54, 54, 52);
 }
 
 .seatingChart {
-  border-style: solid;
-  border-radius: 5px;
-  padding-top: 100px;
+  /*border-style: solid;
+  border-radius: 5px; */
+  padding-top: 5px;
   padding-bottom: 20px;
   width: 100%;
   min-width: 400px;
@@ -34,6 +69,11 @@ background-size: cover;
 
 .instructions {
   text-align: center;
+  color: white;
+  letter-spacing: .75px;
+  font-weight: bolder;
+  font-size: 13pt;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 
