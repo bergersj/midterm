@@ -1,4 +1,7 @@
-
+/* @font-face {
+  font-family: ritz;
+  src: url(casady-and-greene_ritzflf);
+} */
 
 .page-header {
   /* background-color: rgba(138, 145, 145, 0.84); */
@@ -8,8 +11,16 @@
   border-style: none;
 }
 
-.page-header h1{
-  size: 60pt !important;
+.stage {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 20px;
+  color: rgb(214, 211, 213);
+  letter-spacing: 1.5px;
+  box-shadow: 5px 5px 2.5px rgb(54, 54, 52);
+}
+
+h2 {
+  font-size: 60px !important;
 }
 
 .stage {
@@ -41,6 +52,7 @@ background-size: cover;
   text-align: center;
   padding: 5px;
   font-size: 200%;
+  box-shadow: 5px 5px 2.5px rgb(54, 54, 52);
 }
 
 .seatingChart {
