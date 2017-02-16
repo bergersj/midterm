@@ -107,3 +107,12 @@ background-color:black;
 .modal-footer{
 background-color:black;
 }
+
+#firstName,#lastName,#phoneNumber,#eMail,#extraInfo{
+  color:black;
+}
+
+
+.submitButton{
+  color:black;
+}
