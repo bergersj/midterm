@@ -42,8 +42,8 @@
 
                First Name: <br>
                <input type="text" name="firstName" placeholder="Ticket Holder First Name" id="firstName" size="30"><br>
-               Last Name:<br>
-               <input type="text" name="lastName" placeholder="Ticket Holder Last Name" id="lastName" size="30"><br>
+               Last Name (Required):<br>
+               <input type="text" name="lastName" placeholder="Ticket Holder Last Name" id="lastName" size="30" required="true"/><br>
                Number:<br>
                <input type="text" name="phoneNumber" placeholder="Daytime Phone Number" id="phoneNumber" size="30"><br>
                Email:<br>
@@ -53,7 +53,7 @@
                <input type="Msg" name="additionalInfo" placeholder="Special Request" id="extraInfo" size="30"><br>
             <!-- button that runs the submitButton function, which retrieves information from form and
           adds creates an object, then adds object to reservedSeats array -->
-              <br><input class="submitButton" type="button" value="Submit" data-dismiss="modal">
+              <br><input class="submitButton" type="submit" value="Submit" data-dismiss="modal">
 
              </form>
 

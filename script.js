@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 
 //effect when mouse is over a particular seat
@@ -34,11 +35,11 @@ seatTaken = {
 };
 reservedSeats.push(seatTaken);
 clearForm();
-changeClass();    
-    
+changeClass();
 
-});   
-    
+
+});
+
 $(".seat").on("mouseenter", function(event){
  reservedSeats.forEach(function(i) {
    if(i.seatId === event.target.id) {
