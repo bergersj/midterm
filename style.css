@@ -2,19 +2,28 @@ body {
   border-style: solid;
   border-width: thin;
   border-color: rgb(189, 11, 27);
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/62/61/37/62613772f0561f161197028371ab1af7.jpg");
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  font-family: 'Poiret One', cursive;
 }
 
 
 .page-header {
-  /* background-color: rgba(138, 145, 145, 0.84); */
+  background-color: rgba(96, 97, 107, 0.53);
   color: white;
-  margin-top: 0;
   padding: 20px;
   border-style: none;
+  box-shadow: 5px 5px 2.5px rgb(54, 54, 52);
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  letter-spacing: 5px;
 }
 
 h2 {
-  font-size: 60px !important;
+  font-size: 50px !important;
+  text-align: center;
 }
 
 .stage {
@@ -22,21 +31,15 @@ h2 {
   height: 25px;
   margin-bottom: 60px;
   margin-left: 12.5%;
+  margin-right: 80px;
   background-color: rgb(96, 97, 107);
   opacity: .92;
   border-radius: 5px;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Poiret One', cursive;
   font-size: 20px;
-  color: rgb(214, 211, 213);
+  color: white;
   letter-spacing: 1.5px;
   box-shadow: 5px 5px 2.5px rgb(54, 54, 52);
-}
-
-body {
-background-image: url("https://s-media-cache-ak0.pinimg.com/originals/62/61/37/62613772f0561f161197028371ab1af7.jpg");
-background-position:center;
-background-repeat:no-repeat;
-background-size: cover;
 }
 
 
@@ -89,21 +92,26 @@ background-size: cover;
   letter-spacing: .75px;
   font-weight: bolder;
   font-size: 13pt;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Poiret One', cursive;
 }
 
 
 #headerWelcomeSign {
-    max-height: 35%;
-    max-width: 35%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    display:block;
+    margin:auto;
+    width:50%
+    max-height: 55%;
+    max-width: 55%;
+    padding: 15px;
+
+
+
+
 }
 
 form{
-font-family: font-family: 'Poiret One', cursive;
-font-size: 12px;
+font-family:'Poiret One', cursive;
+font-size: 18px;
 font-weight: bolder;
 color:white;
 border:dotted white;
