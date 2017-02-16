@@ -8,11 +8,6 @@ $(document).ready(function(){
      $(this).fadeTo(0, 1.00);
   });
 
-//effect once seat has been clicked on
-$('.seat').click(function(){
-  $(this).css('background-color', 'rgb(127, 0, 0)');
-});
-
 //creates an empty array to store our objects
 var reservedSeats = [];
 var seatId;
@@ -39,10 +34,11 @@ seatTaken = {
 };
 reservedSeats.push(seatTaken);
 clearForm();
+changeClass();    
+    
 
-
-});
-
+});   
+    
 $(".seat").on("mouseenter", function(event){
  reservedSeats.forEach(function(i) {
    if(i.seatId === event.target.id) {
@@ -55,6 +51,10 @@ $(".seat").on("mouseenter", function(event){
 
 function clearForm(){
  document.getElementById("userForm").reset();
+}
+//created a function to change the class of the selected variable (the string content of the seatId variable, concatonated with a hashtag to indicate that it is, in fact, the Id of the selected element. This function removes the class of 'seat' and adds the class of 'reserved seat'.
+function changeClass(){
+   $('#' + seatId).removeClass('seat').addClass('reservedSeat');
 }
 
 
