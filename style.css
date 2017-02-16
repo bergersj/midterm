@@ -1,3 +1,13 @@
+body{
+background-image: url("https://s-media-cache-ak0.pinimg.com/originals/62/61/37/62613772f0561f161197028371ab1af7.jpg");
+background-position:center;
+background-repeat:no-repeat;
+background-size: cover;
+}
+
+
+
+
 .seat {
   display: inline-block;
   border-style: solid;
