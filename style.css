@@ -6,8 +6,6 @@ background-size: cover;
 }
 
 
-
-
 .seat {
   display: inline-block;
   border-style: solid;
@@ -36,4 +34,26 @@ background-size: cover;
 
 .instructions {
   text-align: center;
+}
+
+
+.modal-header{
+  background-color:black;
+
+}
+
+.modal-title{
+  font-family: 'Codystar', cursive;
+  font-weight: bolder;
+  font-size:20px;
+  color:white;
+}
+
+.modal-body{
+background-color:black;
+
+}
+
+.modal-footer{
+background-color:black;
 }
