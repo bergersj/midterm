@@ -77,6 +77,21 @@ background-size: cover;
 }
 
 
+form{
+font-family: font-family: 'Poiret One', cursive;
+font-size: 12px;
+font-weight: bolder;
+color:white;
+border:dotted white;
+padding: 70px;
+text-align: center;
+}
+
+.modal-header{
+  background-color:black;
+
+}
+
 .modal-title{
   font-family: 'Codystar', cursive;
   font-weight: bolder;
