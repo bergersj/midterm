@@ -14,7 +14,7 @@
    <!-- Here is your CSS stylesheet -->
    <link rel="stylesheet" href="style.css">
    <link href="https://fonts.googleapis.com/css?family=Codystar|Poiret+One" rel="stylesheet">
-
+   <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
 
  </head>
  <body>
@@ -42,17 +42,17 @@
                First Name: <br>
                <input type="text" name="firstName" placeholder="Ticket Holder First Name" id="firstName" size="30"><br>
                Last Name:<br>
-               <input type="text" name="lastName" placeholder="Ticket Holder Last Name" id="lastName" size="30"><br>
+               <input type="text" required name="lastName" placeholder="Ticket Holder Last Name" id="lastName" size="30"><br>
                Number:<br>
                <input type="text" name="phoneNumber" placeholder="Daytime Phone Number" id="phoneNumber" size="30"><br>
                Email:<br>
-               <input type="text" name="emailAddress" placeholder="Ticket Holder Email" id="eMail"size="30"><br>
+               <input type="text" name="emailAddress" placeholder="Ticket Holder Email" id="eMail" size="30"><br>
                Special Request:<br>
 
                <input type="Msg" name="additionalInfo" placeholder="Special Request" id="extraInfo" size="30"><br>
             <!-- button that runs the submitButton function, which retrieves information from form and
           adds creates an object, then adds object to reservedSeats array -->
-              <br><input class="submitButton" type="button" value="Submit" data-dismiss="modal">
+              <br><input class="submitButton" type="submit" value="Submit" data-dismiss="modal">
 
              </form>
 
@@ -71,16 +71,17 @@
        <div class="seat" id="A2" data-toggle="modal" data-target="#myModal">A2</div>
        <div class="seat" id="A3" data-toggle="modal" data-target="#myModal">A3</div>
        <div class="seat" id="A4" data-toggle="modal" data-target="#myModal">A4</div>
-       <div class="seat" id="A5" data-toggle="modal" data-target="#myModal">A5</div>
-       <div class="seat" id="A6" data-toggle="modal" data-target="#myModal">A6</div>
+       <div class="seat" id="D5" data-toggle="modal" data-target="#myModal">A5</div>
+       <div class="seat" id="D5" data-toggle="modal" data-target="#myModal">A6</div>
      </div>
      <div class="rowTwo">
        <div class="seat" id="B1" data-toggle="modal" data-target="#myModal">B1</div>
        <div class="seat" id="B2" data-toggle="modal" data-target="#myModal">B2</div>
        <div class="seat" id="B3" data-toggle="modal" data-target="#myModal">B3</div>
        <div class="seat" id="B4" data-toggle="modal" data-target="#myModal">B4</div>
-       <div class="seat" id="B5" data-toggle="modal" data-target="#myModal">B5</div>
-       <div class="seat" id="B6" data-toggle="modal" data-target="#myModal">B6</div>
+       <div class="seat" id="D5" data-toggle="modal" data-target="#myModal">B5</div>
+       <div class="seat" id="D5" data-toggle="modal" data-target="#myModal">B6</div>
+
      </div>
      <div class="rowThee">
        <div class="seat" id="C1" data-toggle="modal" data-target="#myModal">C1</div>
@@ -88,7 +89,7 @@
        <div class="seat" id="C3" data-toggle="modal" data-target="#myModal">C3</div>
        <div class="seat" id="C4" data-toggle="modal" data-target="#myModal">C4</div>
        <div class="seat" id="C5" data-toggle="modal" data-target="#myModal">C5</div>
-       <div class="seat" id="C6" data-toggle="modal" data-target="#myModal">C6</div>
+       <div class="seat" id="D5" data-toggle="modal" data-target="#myModal">C6</div>
      </div>
      <div class="rowFour">
        <div class="seat" id="D1" data-toggle="modal" data-target="#myModal">D1</div>
@@ -96,7 +97,8 @@
        <div class="seat" id="D3" data-toggle="modal" data-target="#myModal">D3</div>
        <div class="seat" id="D4" data-toggle="modal" data-target="#myModal">D4</div>
        <div class="seat" id="D5" data-toggle="modal" data-target="#myModal">D5</div>
-       <div class="seat" id="D6" data-toggle="modal" data-target="#myModal">D6</div>
+       <div class="seat" id="D5" data-toggle="modal" data-target="#myModal">D6</div>
+     </div>
      </div>
    </div>
 
