@@ -51,4 +51,6 @@ background-size: cover;
 
 .instructions {
   text-align: center;
+  color: white;
+  letter-spacing: 1px;
 }

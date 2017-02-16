@@ -15,7 +15,7 @@
 
  </head>
  <body>
-
+<!-- Page header -->
    <div class="page-header">
      <h1>Welcome to The Filmore</h1>
    </div>
@@ -24,7 +24,7 @@
  <div class="modal fade" id="myModal" role="dialog">
    <div class="modal-dialog">
 
-     <!-- Modal content -->
+     <!-- Modal content, seat reservation form -->
      <div class="modal-content">
        <div class="modal-header">
          <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -47,7 +47,8 @@
                Special Request:<br>
 
                <input type="Msg" name="additionalInfo" placeholder="Special Request" id="extraInfo"><br>
-           <!-- added two onclick events to our form button, one to retrieve the form information which will be converted into an object in our script file, the other onclick event clears the form data after it is submitted. -->
+            <!-- button that runs the submitButton function, which retrieves information from form and
+          adds creates an object, then adds object to reservedSeats array -->
                <input class="submitButton" type="button" value="Submit" data-dismiss="modal">
 
              </form>
@@ -59,6 +60,7 @@
  </div>
 </div>
 
+<!-- seating chart  -->
    <div class="seatingChart">
      <div class="stage">Stage</div>
      <div class="rowOne">
@@ -95,7 +97,7 @@
      </div>
    </div>
 
-
+<!-- Bottom intructional paragraph -->
    <div class="instructions">
      <p>Please select an available seat(s) and complete the form for your reservation.</p>
      <p>Thank you!</p>
@@ -106,4 +108,3 @@
    <!-- My last gift to you is a script file. Enjoy :] -->
  </body>
 </html>
->>>>>>> f35aa8eff5ec1ca4f74f2932e431d806085f0ba6
