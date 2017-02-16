@@ -1,7 +1,9 @@
-/* @font-face {
-  font-family: ritz;
-  src: url(casady-and-greene_ritzflf);
-} */
+body {
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(189, 11, 27);
+}
+
 
 .page-header {
   /* background-color: rgba(138, 145, 145, 0.84); */
@@ -9,14 +11,6 @@
   margin-top: 0;
   padding: 20px;
   border-style: none;
-}
-
-.stage {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 20px;
-  color: rgb(214, 211, 213);
-  letter-spacing: 1.5px;
-  box-shadow: 5px 5px 2.5px rgb(54, 54, 52);
 }
 
 h2 {
@@ -29,7 +23,13 @@ h2 {
   margin-bottom: 60px;
   margin-left: 12.5%;
   background-color: rgb(96, 97, 107);
+  opacity: .92;
   border-radius: 5px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 20px;
+  color: rgb(214, 211, 213);
+  letter-spacing: 1.5px;
+  box-shadow: 5px 5px 2.5px rgb(54, 54, 52);
 }
 
 body{

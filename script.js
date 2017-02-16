@@ -2,10 +2,10 @@ $(document).ready(function(){
 
 //effect when mouse is over a particular seat
  $('.seat').hover(function(){
-    $(this).fadeTo("fast", 0.65);
+    $(this).fadeTo("fast", 0.85);
   });
   $('.seat').mouseleave(function(){
-     $(this).fadeTo(50, 1.00);
+     $(this).fadeTo(0, 1.00);
   });
 
 //effect once seat has been clicked on
